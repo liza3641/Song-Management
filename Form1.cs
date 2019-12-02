@@ -585,7 +585,7 @@ namespace WinFormsProject
         }
 
         // **** Delete SQL 실행 ****
-        internal void S_DeleteRow(string 노래번호)
+        internal void S_DeleteRow(int 노래번호)
         {
             string sql = "DELETE FROM 노래 WHERE 노래번호=@노래번호";
             dataAdapter.DeleteCommand = new MySqlCommand(sql, conn);
