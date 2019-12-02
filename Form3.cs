@@ -112,7 +112,7 @@ namespace WinFormsProject
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            mainForm.S_DeleteRow(SN.ToString());
+            mainForm.S_DeleteRow(SN);
             this.Close();
         }
 
