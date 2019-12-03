@@ -228,7 +228,7 @@ namespace WinFormsProject
 
                 dataSet.Clear();                                        // 이전 데이터 지우기
                 dataAdapter.Fill(dataSet, "회원");                      // DB -> DataSet
-                dataGridView1.DataSource = dataSet.Tables["회원"];      // dataGridView에 테이블 표시                                     // 텍스트 박스 내용 지우기
+                dataGridView1.DataSource = dataSet.Tables["회원"];      // dataGridView에 테이블 표시                                  
 
                 
             }
@@ -517,7 +517,7 @@ namespace WinFormsProject
             }
         }
 
-        // **** DataGridView에서 행을 선택하면 새창을 띄움 ****      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // **** DataGridView에서 행을 선택하면 새창을 띄움 ****   
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             selectedRowIndex = e.RowIndex;
@@ -569,7 +569,7 @@ namespace WinFormsProject
 
                 dataSet.Clear();                                        // 이전 데이터 지우기
                 dataAdapter.Fill(dataSet, "노래");                      // DB -> DataSet
-                dataGridView1.DataSource = dataSet.Tables["노래"];      // dataGridView에 테이블 표시                                     // 텍스트 박스 내용 지우기
+                dataGridView1.DataSource = dataSet.Tables["노래"];      // dataGridView에 테이블 표시  
 
 
             }
@@ -926,7 +926,7 @@ namespace WinFormsProject
 
                 dataSet.Clear();                                        // 이전 데이터 지우기
                 dataAdapter.Fill(dataSet, "주문");                      // DB -> DataSet
-                dataGridView1.DataSource = dataSet.Tables["주문"];      // dataGridView에 테이블 표시                                     // 텍스트 박스 내용 지우기
+                dataGridView1.DataSource = dataSet.Tables["주문"];      // dataGridView에 테이블 표시                                   
 
 
             }
