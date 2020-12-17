@@ -11,7 +11,7 @@
 
 ### **사용기술**
 
-> C#, Winform, MySQL
+> C#, Winform, MySQL, Github
 
 <br>
 
