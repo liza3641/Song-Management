@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBoxSS = new System.Windows.Forms.ComboBox();
+            this.comboBoxST = new System.Windows.Forms.ComboBox();
             this.textBoxSG = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBoxSN = new System.Windows.Forms.ComboBox();
@@ -42,8 +44,6 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnTextBoxClear = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBoxST = new System.Windows.Forms.ComboBox();
-            this.comboBoxSS = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +64,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(342, 225);
             this.panel1.TabIndex = 0;
+            // 
+            // comboBoxSS
+            // 
+            this.comboBoxSS.Font = new System.Drawing.Font("굴림", 10F);
+            this.comboBoxSS.FormattingEnabled = true;
+            this.comboBoxSS.Location = new System.Drawing.Point(106, 88);
+            this.comboBoxSS.Name = "comboBoxSS";
+            this.comboBoxSS.Size = new System.Drawing.Size(213, 25);
+            this.comboBoxSS.TabIndex = 13;
+            // 
+            // comboBoxST
+            // 
+            this.comboBoxST.Font = new System.Drawing.Font("굴림", 10F);
+            this.comboBoxST.FormattingEnabled = true;
+            this.comboBoxST.Location = new System.Drawing.Point(106, 57);
+            this.comboBoxST.Name = "comboBoxST";
+            this.comboBoxST.Size = new System.Drawing.Size(213, 25);
+            this.comboBoxST.TabIndex = 12;
+            this.comboBoxST.SelectedIndexChanged += new System.EventHandler(this.comboBoxST_SelectedIndexChanged);
             // 
             // textBoxSG
             // 
@@ -193,25 +212,6 @@
             this.label6.Text = "노래 관리";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // comboBoxST
-            // 
-            this.comboBoxST.Font = new System.Drawing.Font("굴림", 10F);
-            this.comboBoxST.FormattingEnabled = true;
-            this.comboBoxST.Location = new System.Drawing.Point(106, 57);
-            this.comboBoxST.Name = "comboBoxST";
-            this.comboBoxST.Size = new System.Drawing.Size(213, 25);
-            this.comboBoxST.TabIndex = 12;
-            this.comboBoxST.SelectedIndexChanged += new System.EventHandler(this.comboBoxST_SelectedIndexChanged);
-            // 
-            // comboBoxSS
-            // 
-            this.comboBoxSS.Font = new System.Drawing.Font("굴림", 10F);
-            this.comboBoxSS.FormattingEnabled = true;
-            this.comboBoxSS.Location = new System.Drawing.Point(106, 88);
-            this.comboBoxSS.Name = "comboBoxSS";
-            this.comboBoxSS.Size = new System.Drawing.Size(213, 25);
-            this.comboBoxSS.TabIndex = 13;
-            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -225,7 +225,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form3";
-            this.Text = "Form1";
+            this.Text = "노래 정보 입력";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

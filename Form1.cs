@@ -25,7 +25,7 @@ namespace WinFormsProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string connStr = "server=localhost;port=3306;database=song;uid=root;pwd=*a91001120";
+            string connStr = "server=localhost;port=3306;database=song;uid=root;pwd=*password";
             conn = new MySqlConnection(connStr);
             dataAdapter = new MySqlDataAdapter("SELECT * FROM 회원", conn);
             dataSet = new DataSet();
